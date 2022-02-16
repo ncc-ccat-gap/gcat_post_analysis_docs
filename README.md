@@ -176,7 +176,9 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **PS_FORMAT**: Phasing set (typically the position of the first variant in the set)
 * **RGQ_FORMAT**: Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong)
 * **SB_FORMAT**: Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.
-For more information about the Emsemble VEP output fields, please refer to the following website: https://m.ensembl.org/info/docs/tools/vep/vep_formats.html
+
+From here on down, the output of Emsemble VEP continues. For more information, please refer to the following website: https://m.ensembl.org/info/docs/tools/vep/vep_formats.html
+
 * **Allele**: Emsemble VEP output field.
 * **Consequence**: Emsemble VEP output field.
 * **IMPACT**: Emsemble VEP output field.
