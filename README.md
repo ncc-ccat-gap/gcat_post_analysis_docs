@@ -1,7 +1,9 @@
 # gcat_post_analysis_script
 
 
-## Somatic Mutation Results
+## Results
+
+### Somatic Mutation
 
 * **Chr**: Mutation candidate positions
 * **Pos**: Mutation candidate positions
@@ -105,7 +107,7 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **Cancer_Gene_Census**: 
 * **Target_Mutation_Flag**: 
 
-## Somatic SV Results
+### Somatic SV
 
 * **Chr_1**: chromosome for the 1st breakpoint
 * **Pos_1**: coordinate for the 1st breakpoint
@@ -130,3 +132,11 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **Num_Max_Non-Matched_Control_Junction**: the maximum number of junction read pairs among non-matched control samples
 * **Max_Over_Hang_1**: maximum overlang size of supporting read pairs from the 1st breakpoint
 * **Max_Over_Hang_2**: maximum overlang size of supporting read pairs from the 2nd breakpoint
+* **Role_in_Cancer_1**: Role in Cancer field from cancer_gene_census_20210409.txt from the 1st breakpoint
+* **Mutation_Types_1**: Mutation Types field from cancer_gene_census_20210409.txt from the 1st breakpoint
+* **Translocation_Partner_1**: Translocation Partnerfield from cancer_gene_census_20210409.txt from the 1st breakpoint
+* **Role_in_Cancer_2**: Role in Cancer field from cancer_gene_census_20210409.txt from the 2nd breakpoint
+* **Mutation_Types_2**: Mutation Types field from cancer_gene_census_20210409.txt from the 2nd breakpoint
+* **Translocation_Partner_2**: Translocation Partner field from cancer_gene_census_20210409.txt from the 2nd breakpoint
+* **Target_SV_Flag**: 
+
