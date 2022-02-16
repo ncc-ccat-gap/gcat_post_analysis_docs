@@ -7,8 +7,8 @@
 
 * **Chr**: Mutation candidate positions
 * **Pos**: Mutation candidate positions
-* **Ref**: Reference base against the mutation candidate. "-" for insertions.
-* **Alt**: Base sequences of the mutation candidate. "-" for deletions.
+* **Ref**: Reference base against the mutation candidate.
+* **Alt**: Base sequences of the mutation candidate.
 * **Read_Depth_Tumor**: Tumor read depth
 * **Read_Depth_Forward_Strand_Tumor**: Tumor read depth in the forward strand
 * **Read_Depth_Reverse_Strand_Tumor**: Tumor read depth in the reverse strand
