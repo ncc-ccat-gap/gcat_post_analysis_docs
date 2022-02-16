@@ -140,3 +140,103 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **Translocation_Partner_2**: Translocation Partner field from cancer_gene_census_20210409.txt from the 2nd breakpoint
 * **Target_SV_Flag**: 
 
+### Germline Mutation
+
+* **CHROM**: Mutation candidate positions
+* **POS**: Mutation candidate positions
+* **REF**: Reference base against the mutation candidate.
+* **ALT**: Base sequences of the mutation candidate. 
+* **QUAL**: Quality field of VCF
+* **FILTER**: Filter field of VCF
+* **DP_INFO**: Approximate read depth; some reads may have been filtered
+* **AC_INFO**: Allele count in genotypes, for each ALT allele, in the same order as listed
+* **AN_INFO**: Total number of alleles in called genotypes
+* **AF_INFO**: Allele Frequency, for each ALT allele, in the same order as listed
+* **DS_INFO**: Were any of the samples downsampled?
+* **END_INFO**: Stop position of the interval
+* **ExcessHet_INFO**: Phred-scaled p-value for exact test of excess heterozygosity
+* **FS_INFO**: Phred-scaled p-value using Fisher's exact test to detect strand bias
+* **InbreedingCoeff_INFO**: Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation
+* **MLEAC_INFO**: Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed
+* **MLEAF_INFO**: Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed
+* **MQ_INFO**: RMS Mapping Quality
+* **BaseQRankSum_INFO**: Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities
+* **MQRankSum_INFO**: Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities
+* **ReadPosRankSum_INFO**: Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias
+* **QD_INFO**: Variant Confidence/Quality by Depth
+* **RAW_MQandDP_INFO**: Raw data (sum of squared MQ and total depth) for improved RMS Mapping Quality calculation. Incompatible with deprecated RAW_MQ formulation.
+* **SOR_INFO**: Symmetric Odds Ratio of 2x2 contingency table to detect strand bias
+* **GT_FORMAT**: Genotype
+* **DP_FORMAT**: Approximate read depth (reads with MQ=255 or with bad mates are filtered)
+* **AD_FORMAT**: Allelic depths for the ref and alt alleles in the order listed
+* **GQ_FORMAT**: Genotype Quality
+* **PGT_FORMAT**: Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another
+* **PID_FORMAT**: Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records within a phasing group
+* **PL_FORMAT**: Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification
+* **PS_FORMAT**: Phasing set (typically the position of the first variant in the set)
+* **RGQ_FORMAT**: Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong)
+* **SB_FORMAT**: Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.
+For more information about the Emsemble VEP output fields, please refer to the following website: https://m.ensembl.org/info/docs/tools/vep/vep_formats.html
+* **Allele**: Emsemble VEP output field.
+* **Consequence**: Emsemble VEP output field.
+* **IMPACT**: Emsemble VEP output field.
+* **SYMBOL**: Emsemble VEP output field.
+* **Gene**: Emsemble VEP output field.
+* **Feature_type**: Emsemble VEP output field.
+* **Feature**: Emsemble VEP output field.
+* **BIOTYPE**: Emsemble VEP output field.
+* **EXON**: Emsemble VEP output field.
+* **INTRON**: Emsemble VEP output field.
+* **HGVSc**: Emsemble VEP output field.
+* **HGVSp**: Emsemble VEP output field.
+* **cDNA_position**: Emsemble VEP output field.
+* **CDS_position**: Emsemble VEP output field.
+* **Protein_position**: Emsemble VEP output field.
+* **Amino_acids**: Emsemble VEP output field.
+* **Codons**: Emsemble VEP output field.
+* **Existing_variation**: Emsemble VEP output field.
+* **ALLELE_NUM**: Emsemble VEP output field.
+* **DISTANCE**: Emsemble VEP output field.
+* **STRAND**: Emsemble VEP output field.
+* **FLAGS**: Emsemble VEP output field.
+* **MINIMISED**: Emsemble VEP output field.
+* **SYMBOL_SOURCE**: Emsemble VEP output field.
+* **HGNC_ID**: Emsemble VEP output field.
+* **REFSEQ_MATCH**: Emsemble VEP output field.
+* **REFSEQ_OFFSET**: Emsemble VEP output field.
+* **GIVEN_REF**: Emsemble VEP output field.
+* **USED_REF**: Emsemble VEP output field.
+* **BAM_EDIT**: Emsemble VEP output field.
+* **SOURCE**: Emsemble VEP output field.
+* **CLIN_SIG**: Emsemble VEP output field.
+* **SOMATIC**: Emsemble VEP output field.
+* **PHENO**: Emsemble VEP output field.
+* **VAR_SYNONYMS**: Emsemble VEP output field.
+* **SpliceAI_pred_DP_AG**: SpliceAI predicted effect on splicing. Delta position for acceptor gain
+* **SpliceAI_pred_DP_AL**: SpliceAI predicted effect on splicing. Delta position for acceptor loss
+* **SpliceAI_pred_DP_DG**: SpliceAI predicted effect on splicing. Delta position for donor gain
+* **SpliceAI_pred_DP_DL**: SpliceAI predicted effect on splicing. Delta position for donor loss
+* **SpliceAI_pred_DS_AG**: SpliceAI predicted effect on splicing. Delta score for acceptor gain
+* **SpliceAI_pred_DS_AL**: SpliceAI predicted effect on splicing. Delta score for acceptor loss
+* **SpliceAI_pred_DS_DG**: SpliceAI predicted effect on splicing. Delta score for donor gain
+* **SpliceAI_pred_DS_DL**: SpliceAI predicted effect on splicing. Delta score for donor loss
+* **SpliceAI_pred_SYMBOL**: SpliceAI gene symbol
+* **LoF**: Loss-of-function annotation (HC = High Confidence; LC = Low Confidence)
+* **LoF_filter**: Reason for LoF not being HC
+* **LoF_flags**: Possible warning flags for LoF
+* **LoF_info**: Info used for LoF annotation
+* **CADD_PHRED**: PHRED-like scaled CADD score
+* **CADD_RAW**: Raw CADD score
+* **gnomADg**: gnomad.genomes.r3.0.sites.vcf.bgz (exact)
+* **gnomADg_AF**: AF field from gnomad.genomes.r3.0.sites.vcf.bgz
+* **gnomADg_AF_eas**: AF_eas field from gnomad.genomes.r3.0.sites.vcf.bgz"
+* **ClinVar**: clinvar_20210102.vcf.gz (exact)
+* **ClinVar_CLNSIG**: CLNSIG field from clinvar_20210102.vcf.gz
+* **ClinVar_CLNREVSTAT**: CLNREVSTAT field from clinvar_20210102.vcf.gz
+* **ClinVar_CLNDN**: CLNDN field from clinvar_20210102.vcf.gz
+* **ToMMo**: tommo-8.3kjpn-20200831-af_snvall_merged_liftedoverGRCh38.vcf.gz or tommo-8.3kjpn-20200831-af_indelall_merged_liftedoverGRCh38.vcf.gz (exact)
+* **ToMMo_AN**: AN field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz
+* **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz
+* **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz
+* **Cancer_Gene_Census**: Role in Cancer and  Mutation Types field from cancer_gene_census_20210409.txt, separated by ":"
+* **Target_Mutation_Flag**: 
