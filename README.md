@@ -38,7 +38,9 @@
 * **Simple_Repeat_Region**: Simple repeat region
 * **LOD_Score_of_Hotspot_Call**: LOD Score of Hotspot Call
 * **EBCall_Pval**: EBCall Score
-For more information about the Emsemble VEP output fields, please refer to the following website: https://m.ensembl.org/info/docs/tools/vep/vep_formats.html
+
+From here on down, the output of Emsemble VEP continues. For more information, please refer to the following website: https://m.ensembl.org/info/docs/tools/vep/vep_formats.html
+
 * **Allele**: Emsemble VEP output field.
 * **Consequence**: Emsemble VEP output field.
 * **IMPACT**: Emsemble VEP output field.
