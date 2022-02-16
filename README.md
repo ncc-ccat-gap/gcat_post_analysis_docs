@@ -104,7 +104,7 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **ToMMo_AN**: AN field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
 * **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
 * **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
-* **Cancer_Gene_Census**: 
+* **Cancer_Gene_Census**: Role in Cancer and  Mutation Types field from cancer_gene_census_20210409.txt, separated by ":"
 * **Target_Mutation_Flag**: 
 
 ### Somatic SV
