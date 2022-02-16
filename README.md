@@ -250,5 +250,5 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **Target_Mutation_Flag**: 下記の条件に当てはまる変異にフラグを付ける。
     - カラム「VAR_SYNONYMS」に [COSM::] が存在すること。
     - カラム「CancerGeneCensus」が空白でない、かつ、カラム「LoF」が [HC]であること
-    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「spliceAI_pred_DS_AG」、「spliceAI_pred_DS_AL」、「spliceAI_pred_DS_DG」、「spliceAI_pred_DS_DL」のいずれかの値が[0.10.5]以上であること。
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「spliceAI_pred_DS_AG」、「spliceAI_pred_DS_AL」、「spliceAI_pred_DS_DG」、「spliceAI_pred_DS_DL」のいずれかの値が[0.5]以上であること。
     - カラム「ClinVar_CLINSIG」に[Pathogenic]、[Likely_pathogenic]のいずれかの文字列が含まれること
