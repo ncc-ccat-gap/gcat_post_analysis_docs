@@ -76,35 +76,34 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **SOMATIC**: Emsemble VEP output field.
 * **PHENO**: Emsemble VEP output field.
 * **VAR_SYNONYMS**: Emsemble VEP output field.
-* **SpliceAI_pred_DP_AG**: SpliceAI predicted effect on splicing. Delta position for acceptor gain. Customized emsemble VEP output field.
-* **SpliceAI_pred_DP_AL**: SpliceAI predicted effect on splicing. Delta position for acceptor loss. Customized emsemble VEP output field.
-* **SpliceAI_pred_DP_DG**: SpliceAI predicted effect on splicing. Delta position for donor gain. Customized emsemble VEP output field.
-* **SpliceAI_pred_DP_DL**: SpliceAI predicted effect on splicing. Delta position for donor loss. Customized emsemble VEP output field.
-* **SpliceAI_pred_DS_AG**: SpliceAI predicted effect on splicing. Delta score for acceptor gain. Customized emsemble VEP output field.
-* **SpliceAI_pred_DS_AL**: SpliceAI predicted effect on splicing. Delta score for acceptor loss. Customized emsemble VEP output field.
-* **SpliceAI_pred_DS_DG**: SpliceAI predicted effect on splicing. Delta score for donor gain. Customized emsemble VEP output field.
-* **SpliceAI_pred_DS_DL**: SpliceAI predicted effect on splicing. Delta score for donor loss. Customized emsemble VEP output field.
-* **SpliceAI_pred_SYMBOL**: SpliceAI gene symbol. Customized emsemble VEP output field.
-* **LoF**: Loss-of-function annotation (HC = High Confidence; LC = Low Confidence). Customized emsemble VEP output field.
-* **LoF_filter**: Reason for LoF not being HC. Customized emsemble VEP output field.
-* **LoF_flags**: Possible warning flags for LoF. Customized emsemble VEP output field.
-* **LoF_info**: Info used for LoF annotation. Customized emsemble VEP output field.
-* **CADD_PHRED**: PHRED-like scaled CADD score. Customized emsemble VEP output field.
-* **CADD_RAW**: Raw CADD score. Customized emsemble VEP output field.
-* **gnomADg**: gnomad.genomes.r3.0.sites.vcf.bgz (exact). Customized emsemble VEP output field.
-* **gnomADg_AF**: AF field from gnomad.genomes.r3.0.sites.vcf.bgz. Customized emsemble VEP output field.
-* **gnomADg_AF_eas**: AF_eas field from gnomad.genomes.r3.0.sites.vcf.bgz". Customized emsemble VEP output field.
-* **ClinVar**: clinvar_20210102.vcf.gz (exact). Customized emsemble VEP output field.
-* **ClinVar_CLNSIG**: CLNSIG field from clinvar_20210102.vcf.gz. Customized emsemble VEP output field.
-* **ClinVar_CLNREVSTAT**: CLNREVSTAT field from clinvar_20210102.vcf.gz. Customized emsemble VEP output field.
-* **ClinVar_CLNDN**: CLNDN field from clinvar_20210102.vcf.gz. Customized emsemble VEP output field.
-* **ToMMo**: tommo-8.3kjpn-20200831-af_snvall_merged_liftedoverGRCh38.vcf.gz or tommo-8.3kjpn-20200831-af_indelall_merged_liftedoverGRCh38.vcf.gz (exact). Customized emsemble VEP output field.
-* **ToMMo_AN**: AN field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz. Customized emsemble VEP output field.
-* **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz. Customized emsemble VEP output field.
-* **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz. Customized emsemble VEP output field.
+* **SpliceAI_pred_DP_AG**: SpliceAI predicted effect on splicing. Delta position for acceptor gain.
+* **SpliceAI_pred_DP_AL**: SpliceAI predicted effect on splicing. Delta position for acceptor loss.
+* **SpliceAI_pred_DP_DG**: SpliceAI predicted effect on splicing. Delta position for donor gain.
+* **SpliceAI_pred_DP_DL**: SpliceAI predicted effect on splicing. Delta position for donor loss.
+* **SpliceAI_pred_DS_AG**: SpliceAI predicted effect on splicing. Delta score for acceptor gain.
+* **SpliceAI_pred_DS_AL**: SpliceAI predicted effect on splicing. Delta score for acceptor loss.
+* **SpliceAI_pred_DS_DG**: SpliceAI predicted effect on splicing. Delta score for donor gain.
+* **SpliceAI_pred_DS_DL**: SpliceAI predicted effect on splicing. Delta score for donor loss.
+* **SpliceAI_pred_SYMBOL**: SpliceAI gene symbol.
+* **LoF**: Loss-of-function annotation (HC = High Confidence; LC = Low Confidence).
+* **LoF_filter**: Reason for LoF not being HC.
+* **LoF_flags**: Possible warning flags for LoF.
+* **LoF_info**: Info used for LoF annotation.
+* **CADD_PHRED**: PHRED-like scaled CADD score.
+* **CADD_RAW**: Raw CADD score.
+* **gnomADg**: gnomad.genomes.r3.0.sites.vcf.bgz (exact).
+* **gnomADg_AF**: AF field from gnomad.genomes.r3.0.sites.vcf.bgz.
+* **gnomADg_AF_eas**: AF_eas field from gnomad.genomes.r3.0.sites.vcf.bgz".
+* **ClinVar**: clinvar_20210102.vcf.gz (exact).
+* **ClinVar_CLNSIG**: CLNSIG field from clinvar_20210102.vcf.gz.
+* **ClinVar_CLNREVSTAT**: CLNREVSTAT field from clinvar_20210102.vcf.gz.
+* **ClinVar_CLNDN**: CLNDN field from clinvar_20210102.vcf.gz.
+* **ToMMo**: tommo-8.3kjpn-20200831-af_snvall_merged_liftedoverGRCh38.vcf.gz or tommo-8.3kjpn-20200831-af_indelall_merged_liftedoverGRCh38.vcf.gz (exact).
+* **ToMMo_AN**: AN field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
+* **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
+* **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
 * **Cancer_Gene_Census**: 
 * **Target_Mutation_Flag**: 
-* 
 
 ## Somatic SV Results
 
