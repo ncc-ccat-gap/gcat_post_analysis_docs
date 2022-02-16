@@ -105,7 +105,12 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
 * **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz.
 * **Cancer_Gene_Census**: Role in Cancer and  Mutation Types field from cancer_gene_census_20210409.txt, separated by ":"
-* **Target_Mutation_Flag**: 
+* **Target_Mutation_Flag**: 下記の条件に当てはまる変異にフラグを付ける。
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「Consequence」に[missense_variant]、[splice_acceptor_variant]、[splice_donor_variant]、[splice_region_variant]、[stop_gained]、[stop_lost]、[frameshift_variant]の文字列が含まれること
+    - カラム「VAR_SYNONYMS」に [COSM::] が存在すること。
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「LoF」が [HC]であること
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「spliceAI_pred_DS_AG」、「spliceAI_pred_DS_AL」、「spliceAI_pred_DS_DG」、「spliceAI_pred_DS_DL」のいずれかの値が[0.5]以上であること。
+    - カラム「ClinVar_CLINSIG」に[Pathogenic]、[Likely_pathogenic]のいずれかの文字列が含まれること
 
 ### Somatic SV
 
@@ -138,7 +143,8 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **Role_in_Cancer_2**: Role in Cancer field from cancer_gene_census_20210409.txt from the 2nd breakpoint
 * **Mutation_Types_2**: Mutation Types field from cancer_gene_census_20210409.txt from the 2nd breakpoint
 * **Translocation_Partner_2**: Translocation Partner field from cancer_gene_census_20210409.txt from the 2nd breakpoint
-* **Target_SV_Flag**: 
+* **Target_SV_Flag**: 下記の条件に当てはまる変異にフラグを付ける。
+     - カラム「CancerGeneCensus」が空白でない、かつ、カラム「Role_in_Cancer_1」、「Mutation_Types_1」、「Translocation_Partner_1」、「Role_in_Cancer_2」、「Mutation_Types_2」、「Translocation_Partner_2」、のいずれかが空白でないこと
 
 ### Germline Mutation
 
@@ -241,4 +247,8 @@ From here on down, the output of Emsemble VEP continues. For more information, p
 * **ToMMo_AC**: AC field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz
 * **ToMMo_AF**: AF field from tommo-8.3kjpn-20200831-af_${snv/indel}all_merged_liftedoverGRCh38.vcf.gz
 * **Cancer_Gene_Census**: Role in Cancer and  Mutation Types field from cancer_gene_census_20210409.txt, separated by ":"
-* **Target_Mutation_Flag**: 
+* **Target_Mutation_Flag**: 下記の条件に当てはまる変異にフラグを付ける。
+    - カラム「VAR_SYNONYMS」に [COSM::] が存在すること。
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「LoF」が [HC]であること
+    - カラム「CancerGeneCensus」が空白でない、かつ、カラム「spliceAI_pred_DS_AG」、「spliceAI_pred_DS_AL」、「spliceAI_pred_DS_DG」、「spliceAI_pred_DS_DL」のいずれかの値が[0.10.5]以上であること。
+    - カラム「ClinVar_CLINSIG」に[Pathogenic]、[Likely_pathogenic]のいずれかの文字列が含まれること
